@@ -1,11 +1,3 @@
 hello
 hello
-hello
-hello
-hello
-hello
-hello
-abc
-hi
-*******
 
