@@ -1,5 +1,2 @@
 hello
-hello
-hello
 inginginging
-test
