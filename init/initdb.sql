@@ -14,15 +14,15 @@ create user 'rmaria'@'127.0.0.1' identified by 'rmaria';
 set password for 'rmaria'@'127.0.0.1' = password('rmaria');
 grant all privileges on rmaria.* to 'rmaria'@'127.0.0.1';
 
-create user 'root'@'%' identified by 'mysql';
+--create user 'root'@'127.0.0.1' identified by 'mysql';
 
 set password for 'root'@'%' = password('mysql');
 set password for 'root'@'localhost' = password('mysql');
-set password for 'root'@'127.0.0.1' = password('mysql');
+--set password for 'root'@'127.0.0.1' = password('mysql');
 
 grant all privileges on *.* to 'root'@'%';
 grant all privileges on *.* to 'root'@'localhost';
-grant all privileges on *.* to 'root'@'127.0.0.1';
+--grant all privileges on *.* to 'root'@'127.0.0.1';
 
 flush privileges;
 
