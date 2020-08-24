@@ -1,0 +1,11 @@
+FROM mariadb:10.4.7
+
+ENV MYSQL_ROOT_PASSWORD=mysql
+
+COPY my.cnf /etc/mysql/conf.d/
+COPY initdb.sql /docker-entrypoint-initdb.d/
+
+RUN ["/usr/local/bin/docker-entrypoint.sh", "mysqld", "--datadir", "/initialized-db"]
+
+RUN ["/usr/local/bin/docker-entrypoint.sh", "mysqld", "--datadir", "/initialized-db", "--aria-log-dir-path"]
+
